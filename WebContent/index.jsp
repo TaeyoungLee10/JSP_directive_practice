@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>JSP directives</title>
 </head>
 <body>
 
@@ -15,8 +15,13 @@
 	<%@ page buffer="16kb" %>
 	<%@ page info="written by Tae young Lee" %>  
 	<%@ page errorPage="errorpage.jsp" %>
-	<%= 100/1 %>
+	<%= 100/2 %> <!-- error page 확인하기 위한 코드,
+	0으로 바꿔서 실행해보면 errorpage으로 이동하는 것을 확인 할 수 있다 -->
+	<h1>JSP Include directives</h1>
 	<%@ include file="header.html" %>
-
+	<%@ page isELIgnored="true" %> 
+	
+	<h1>JSP taglib directives</h1>
+	
 </body>
 </html>
