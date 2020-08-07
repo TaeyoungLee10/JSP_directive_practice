@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>JSP EL expressions</title>
 </head>
 <body>
+
+	Welcome, ${param.name}<br/>
+	Hello, ${ sessionScope.n1 }<br/>
+	This is a cookie: ${cookie.cookie1.value}
+	
 
 </body>
 </html>
